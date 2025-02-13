@@ -1,15 +1,33 @@
-form {
-    margin: 20px auto;
+.txtshadow {
+    color: #990a0a;
+    font-style: oblique;
+    font-size: 5rem;
+    text-transform:capitalize;
+    text-shadow:
+        1px 1px 1px wheat,
+        2px 2px 2px wheat;
+    margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid wheat;
+    border-radius: 4px;
+}
+
+
+
+form {
+    margin: 300px auto;
+    padding: 20px;
+    border: 1px solid #990a0a;
     border-radius: 4px;
     width: 100%;
     max-width: 400px;
+    background-color: thistle;
 }
 
 html {
     box-sizing: border-box;
 }
+
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -19,6 +37,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color:black;  
 }
 
 input, textarea, select, button {
