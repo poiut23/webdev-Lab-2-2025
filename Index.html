@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <form action="/submit" method="post" autocomplete="on"> <!---
+        "/submit" this is where the form data will be sent to
+        "post" is the method of sending the data
+        "autocomplete" is a boolean attribute that specifies whether a form or input field should have autocomplete enabled
+--->
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> <!---
+            "text" is the type of input field
+            "id" is the unique identifier for the input field
+            "name" is the name of the input field
+            "required" is a boolean attribute that specifies whether the input field is required-->     
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <!---
+            "email" is the type of input field
+            "id" is the unique identifier for the input field
+            "name" is the name of the input field
+            "required" is a boolean attribute that specifies whether the input field is required-->
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required> 
+    </div>
+    <div>
+        <label for="DateOfBirth">Date Of Birth</label>
+        <input type="date" id="DateOfBirth" name="DateOfBirth" required>
+    </div>
+    <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <!---
+            "pattern" is a regular expression that the input field's value must match-->     
+    </div>
+    <div>
+       <label for="website">Website:</label>
+         <input type="url" id="website" name="website"> <!---
+        why not use required here?, because it is not required to have a website-->
+    </div>
+    <div>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" required>
+    </div>
+    <div>
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file"> 
+    </div>
+    <div> 
+        <button type="submit">Submit</button> <!---
+            "submit" is the type of button
+            when the button is clicked, the form data will be sent to the "/submit" path -->
+    </div>
 
+    </form>
+</body>
+</html>
